@@ -1,3 +1,4 @@
+import React from 'react';
 import type { TripResult } from '../types/trip';
 
 interface TripSummaryProps {
@@ -85,7 +86,7 @@ function getStopBg(type: string): string {
   return map[type] || 'bg-slate-300';
 }
 
-function getStopIcon(type: string): JSX.Element {
+function getStopIcon(type: string): React.ReactNode {
   const cls = "w-3.5 h-3.5 text-white";
   switch (type) {
     case 'pickup':
